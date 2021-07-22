@@ -9,6 +9,6 @@ const ingredients = [
 ingredients.forEach(item =>{
   const variable = document.createElement('li')
   variable.textContent = item
-document.querySelector('ul#ingredients').appendChild(variable)
   console.log(variable)
 })
+document.querySelector('ul#ingredients').append(variable)
