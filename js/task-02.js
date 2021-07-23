@@ -11,4 +11,4 @@ ingredients.forEach(item =>{
   variable.textContent = item
   console.log(variable)
 })
-document.querySelector('ul#ingredients').append(variable)
+document.querySelector('ul#ingredients').append(...variable)
