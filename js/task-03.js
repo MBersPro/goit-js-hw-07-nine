@@ -21,4 +21,4 @@ const html = images.map(item => {
   return `<li><img src="${urlClass}" alt="${altClass}"/></li>`;
 }).join("");
 galleryNode.insertAdjacentHTML("afterbegin", html)
- 
+

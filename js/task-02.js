@@ -12,4 +12,3 @@ ingredients.forEach(item =>{
   console.log(variable);
   document.querySelector('#ingredients').append(variable);
 })
-
