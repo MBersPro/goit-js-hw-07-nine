@@ -18,6 +18,8 @@ const galleryNode = document.querySelector('#gallery')
 images.map(item => {
   const urlClass = item.url
   const altClass = item.class
+  galleryNode.insertAdjacentHTML("afterbegin", `<li><img src="${urlClass}" alt="${altClass}"/></li>`)
+ 
 })
-galleryNode.insertAdjacentHTML("afterbegin", `<li><img src="${urlClass}" alt="${altClass}"/></li>`)
+
  
