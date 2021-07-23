@@ -13,11 +13,12 @@ const images = [
   },
 ];
 
-const galleryNode = document.querySelector('#gallery')
+const galleryNode = document.querySelector('#gallery');
 
-images.map(item => {
-  const urlClass = item.url
-  const altClass = item.class
-})
-galleryNode.insertAdjacentHTML("afterbegin", `<li><img src="${urlClass}" alt="${altClass}"/></li>`)
+const html = images.map(item => {
+  const urlClass = item.url;
+  const altClass = item.class;
+  return `<li><img src="${urlClass}" alt="${altClass}"/></li>`;
+}).join("");
+galleryNode.insertAdjacentHTML("afterbegin", html)
  
