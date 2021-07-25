@@ -6,9 +6,12 @@ const ingredients = [
   'Зелень',
   'Приправы',
 ];
-ingredients.forEach(item =>{
-  const variable = document.createElement('li');
-  variable.textContent = item;
-  console.log(variable);
-  document.querySelector('#ingredients').append(variable);
-})
+
+const ul = document.querySelector("#ingredients");
+const liFunc = ingredients.map(item => {
+  const li = document.createElement("li");
+  li.textContent = item;
+  return li;
+});
+
+ul.append(...liFunc);
